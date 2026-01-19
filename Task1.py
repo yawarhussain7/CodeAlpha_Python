@@ -23,9 +23,12 @@ def Handman():
         if len(user_input)!= 1 or user_input.isalpha()==False:
             print("Invalid Input! Please enter a single alphabetic character.")
             continue
+
+        if user_input in guees_words:
+            print("Error: Letter alread enter ")
+            continue
+
         
-
-
     
 
     
