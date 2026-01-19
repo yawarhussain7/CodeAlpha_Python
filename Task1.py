@@ -28,10 +28,23 @@ def Handman():
             print("Error: Letter alread enter ")
             continue
 
-        
-    
+        if user_input in word:
+            print("-> Correct letter Guess")
+            for i in range(len(word)):
+                if word[i] == user_input:
 
+                    display_screen=user_input
+
+        else:
+            print("Error: user input is invalid")
+            trial_no++
+        
+       
+        if '_' not in display_screen:
+            print("You are Won ")
+            return
     
+    print("You are loss")
 
 
 
