@@ -14,7 +14,7 @@ def Handman():
     display_screen=['_']*len(word)
 
     while trial_no < guess_limit:
-        print("Word: ".join(display_screen))
+        print("Word:", " ".join(display_screen))
         print(f'Trial Number: {trial_no}')
         print(f'Remaning Limit: {guess_limit}')
 
